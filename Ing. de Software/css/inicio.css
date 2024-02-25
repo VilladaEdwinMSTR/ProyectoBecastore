@@ -1,11 +1,33 @@
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 100%;
+    display: block;
+}
+
+button{
+    cursor: pointer;
+    pointer-events: auto;
+
+}
+
+/*BARRA DE NAVEGACION*/
 #Marquesina{
-    margin: -10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
     min-width: 100% ;
+    min-height: 80px;
     display: flex;
     flex-direction: row;
     background-color: darkcyan;
     align-items: center;
     justify-content: space-between;
+    
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),
+                0 2px 10px 0 rgba(0,0,0,0.18);
+    display: 1;
+
 }
 
 #Op_marquesina{
@@ -23,10 +45,38 @@
 
 .btnMarq{
     min-width: 100px;
-    min-height: 40px;
+    min-height: 80px;
     margin-right: 1%;
-    border: 1px solid #2a9e15;
+    /* border: 1px solid #2a9e15; */
     background-color: transparent;
+    border: none;
     color: white;
     font-size: 20px;
+}
+
+.btnMarq:hover{
+    background-color: rgb(5, 121, 147);
+}
+
+#btnLogin, #btnSingUp{
+    background-color: transparent;
+    font-size: 15px;
+}
+
+#btnLogin{
+    border: 1px solid salmon;
+    border-radius: 4px ;
+    min-height: 50px;
+    min-width: 80px;
+    color: white;
+    
+}
+
+#btnSingUp{
+    border: none;
+    color: rgb(232, 232, 232);
+}
+
+#Bienvenida{
+    display: -1;
 }
