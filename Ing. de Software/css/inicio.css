@@ -29,14 +29,13 @@ main{
     max-height: 10%;
     display: flex;
     flex-direction: row;
-    background-color: transparent;
+    background-color: #89AC76;
     align-items: center;
     justify-content: space-between;
     
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),
                 0 2px 10px 0 rgba(0,0,0,0.18);
     display: 1;
-
 }
 
 #Op_marquesina{
@@ -50,6 +49,10 @@ main{
 
 #logo{
     margin-left: 1%;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(232, 232, 232);
 }
 
 .btnMarq{
@@ -67,23 +70,14 @@ main{
     background-color: rgb(5, 121, 147);
 }
 
-#btnLogin, #btnSingUp{
+#btnLogin, #btnSignUp{
     background-color: transparent;
     font-size: 15px;
-}
-
-#btnLogin{
-    border: 1px solid salmon;
-    border-radius: 4px ;
-    min-height: 50px;
-    min-width: 80px;
-    color: white;
-    
-}
-
-#btnSingUp{
     border: none;
     color: rgb(232, 232, 232);
+    min-height: 50px;
+    min-width: 80px;
+    cursor: pointer;
 }
 
 #Bienvenida{

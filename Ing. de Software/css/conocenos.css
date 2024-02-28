@@ -1,0 +1,64 @@
+/*Marquesina del conocenos.html empieza aqui*/
+
+#Marquesina{
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    min-width: 100% ;
+    min-height: 10%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: #89AC76;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),
+                0 2px 10px 0 rgba(0,0,0,0.18);
+    display: 1;
+}
+
+#Op_marquesina{
+    min-width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+#logo{
+    margin-left: 1%;
+    font-family: "ArialS", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: rgb(232, 232, 232);
+}
+
+.btnMarq{
+    min-width: 100px;
+    min-height: 80px;
+    margin-right: 1%;
+    /* border: 1px solid #2a9e15; */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.btnMarq:hover{
+    background-color: rgb(5, 121, 147);
+}
+
+#btnLogin, #btnSignUp{
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+    color: rgb(232, 232, 232);
+    min-height: 50px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+/*Marquesina del conocenos.html termina aqui*/
