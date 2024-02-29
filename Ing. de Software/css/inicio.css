@@ -52,7 +52,9 @@ main{
     font-family: "Arial", sans-serif;
     font-style: normal;
     font-size: 1.5rem;
-    color: rgb(232, 232, 232);
+}
+#logoHorizotal{
+    margin-right:20px ;
 }
 
 .btnMarq{

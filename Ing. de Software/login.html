@@ -11,12 +11,41 @@
 </head>
 <body>
     <div id="Marquesina">
-        <h1 id="logo">BECASTOR</h1>
+        <img id="logoHorizontal" src="css/img/logo_horizontal.png" width="196" height="44"></img>
         <div id="Op_marquesina">
             <button onclick="location.href='Inicio.html'" class="btnMarq" id="btnInicio">Inicio</button>
             <button onclick="location.href='conocenos.html'" class="btnMarq" id="btnConocenos">Conocenos</button>
             <button onclick="location.href='signup.html'" id="btnSignUp">Sign up</button>
             <button onclick="location.href='login.html'" id="btnLogin">Log in</button>
+        </div>
+    </div>
+    <div id="contenedor">
+            
+        <div id="contenedorcentrado">
+            <div id="login">
+                <form id="loginform">
+                    <label for="usuario">Usuario</label>
+                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
+                    
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Contraseña" name="password" required>
+                    
+                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+                </form>
+                
+            </div>
+            <div id="derecho">
+                <div class="titulo">
+                    Bienvenido
+                </div>
+                <hr>
+                <div class="pie-form">
+                    <a href="#">¿Perdiste tu contraseña?</a>
+                    <a href="#">¿No tienes Cuenta? Registrate</a>
+                    <hr>
+                    <a href="#">« Volver</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

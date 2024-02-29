@@ -62,3 +62,11 @@
 }
 
 /*Marquesina del conocenos.html termina aqui*/
+
+#Bienvenida img{
+    width: 120%;
+    backdrop-filter: blur(10px);
+    margin-top: -24%;
+    position: relative;
+    z-index: -4;
+}
