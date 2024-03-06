@@ -29,7 +29,7 @@ main{
     max-height: 10%;
     display: flex;
     flex-direction: row;
-    background-color: #89AC76;
+    background-color: #89ac76af;
     align-items: center;
     justify-content: space-between;
     
@@ -69,7 +69,7 @@ main{
 }
 
 .btnMarq:hover{
-    background-color: rgb(5, 121, 147);
+    background-color: rgb(109, 147, 5)
 }
 
 #btnLogin, #btnSignUp{
@@ -82,6 +82,16 @@ main{
     cursor: pointer;
 }
 
+:is(#btnLogin,#btnSignUp):hover{
+    color: white;
+    font-size: 17px;
+    font-weight:100;
+    text-shadow:
+    1px 1px 1px rgb(223, 255, 171),
+    0 0 1em rgba(255, 255, 255, 0.18),
+    0 0 0.2em rgba(255, 255, 255, 0.217);
+}
+
 #Bienvenida{
     display: -1px;
     
@@ -90,31 +100,25 @@ main{
 #Bienvenida img{
     width: 120%;
     backdrop-filter: blur(10px);
-    margin-top: -24%;
     position: relative;
     z-index: -4;
+    margin-top: -5%;
 }
-
-/* #Slogan{
-    position: relative;
-    z-index: 5px;
-    left: 70%;
-    
-    color: white;
-    font-size: 30px;
-} */
 
 #Slogan{
     position: relative;
-    margin-top: 20%;
+    margin-top: -50%;
     left: 50%;
     z-index: 1px;
-
     font-family: "Bebas Neue", sans-serif;
-  font-style: normal;
-  font-size: 1.5rem;
-  color: white;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    max-width: 50%;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
 
-  text-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),
-  0 2px 10px 0 rgba(0,0,0,0.18);
+    text-align: center;
 }
