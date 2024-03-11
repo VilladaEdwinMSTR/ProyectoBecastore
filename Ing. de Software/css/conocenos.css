@@ -1,4 +1,10 @@
 /*Marquesina del conocenos.html empieza aqui*/
+body{
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 100%;
+        display: block;  
+}
 
 #Marquesina{
     z-index: 1;
