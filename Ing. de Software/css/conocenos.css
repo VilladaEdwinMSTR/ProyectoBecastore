@@ -82,7 +82,7 @@ body{
 
 /*Texto encima de imagen*/
 
-#tituloMision{
+/* #tituloMision{
     position: relative;
     margin-top: -65%;
     left: 50%;
@@ -134,7 +134,81 @@ body{
     0 0 0.2em rgba(0,0,0,0.18);
 
     text-align: center;
-}
+} */
 
 /*Marquesina del conocenos.html termina aqui*/
 
+#contenedorFlex{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 0%;
+}
+
+#tituloConocenos{
+    /* position: relative;
+    margin-top: -65%;
+    left: 30%;
+    z-index: 1px; */
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    /* font-size: 2rem; */
+    color: white;
+    max-width: 50%;
+    text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.918),
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
+
+    text-align: center;
+}
+
+#textoConocenos{
+    /* position: relative;
+    margin-top: -65%;
+    left: 30%;
+    z-index: 1px; */
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 50%;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
+
+    text-align: justify;
+}
+
+.contMision{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-shrink: 1;
+    flex-wrap: column wrap;
+    margin-top: -65%;
+    right: auto;
+    background-color: rgba(0, 255, 255, 0.233);
+    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
+}
+
+.contVision{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-shrink: 1;
+    flex-wrap: column wrap;
+    background-color: rgba(255, 251, 0, 0.233);
+    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
+}
+
+.contValores{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    flex-shrink: 1;
+    flex-wrap: column wrap;
+    background-color: rgba(0, 255, 64, 0.233);
+    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
+}
