@@ -67,12 +67,74 @@ body{
     cursor: pointer;
 }
 
-/*Marquesina del conocenos.html termina aqui*/
+#Conocenos{
+    display: -1px;
+    
+}
 
-#Bienvenida img{
+#Conocenos img{
     width: 120%;
     backdrop-filter: blur(10px);
     margin-top: -24%;
     position: relative;
     z-index: -4;
 }
+
+/*Texto encima de imagen*/
+
+#tituloMision{
+    position: relative;
+    margin-top: -65%;
+    left: 50%;
+    z-index: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    max-width: 50%;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
+
+    text-align: center;
+}
+
+#textoMision{
+    position: relative;
+    margin-top: 10px;
+    left: 50%;
+    z-index: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    max-width: 50%;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
+
+    text-align: justify;
+}
+
+#tituloVision{
+    position: relative;
+    margin-top: -65%;
+    left: 30%;
+    z-index: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+    color: white;
+    max-width: 50%;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em rgba(0,0,0,0.18),
+    0 0 0.2em rgba(0,0,0,0.18);
+
+    text-align: center;
+}
+
+/*Marquesina del conocenos.html termina aqui*/
+
