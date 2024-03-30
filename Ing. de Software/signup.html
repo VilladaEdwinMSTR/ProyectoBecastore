@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4122e002ed.js" crossorigin="anonymous"></script>
     <title>Registro</title>
-    <link href="css/signup.css" rel="stylesheet" type="text/css"></link>
+    <link href="css/login.css" rel="stylesheet" type="text/css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Playpen+Sans:wght@300&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap" rel="stylesheet">
@@ -19,17 +20,28 @@
             <button onclick="location.href='login.html'" id="btnLogin">Log in</button>
         </div>
     </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>    
+    <form class="formulario">
+        <h1> Registrate </h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-user icon"></i>
+                <input type="text" placeholder="Nombre Completo">
+            </div>
 
-    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
-    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Correo Electronico">
+            </div>
+
+            <div class="input-contenedor">
+                ....<i class="fa-solid fa-lock"></i>....
+                <input type="password" placeholder="Contrasena">
+            </div>
+
+            <input type="submit" value="login.html" class="button">
+
+            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+        </div>
+    </form>
 </body>
 </html>

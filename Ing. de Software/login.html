@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4122e002ed.js" crossorigin="anonymous"></script>
     <title>Registro</title>
     <link href="css/login.css" rel="stylesheet" type="text/css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,34 +20,28 @@
             <button onclick="location.href='login.html'" id="btnLogin">Log in</button>
         </div>
     </div>
-    <div id="contenedor">
-            
-        <div id="contenedorcentrado">
-            <div id="login">
-                <form id="loginform">
-                    <label for="usuario">Usuario</label>
-                    <input id="usuario" type="text" name="usuario" placeholder="Usuario" required>
-                    
-                    <label for="password">Contraseña</label>
-                    <input id="password" type="password" placeholder="Contraseña" name="password" required>
-                    
-                    <button type="submit" title="Ingresar" name="Ingresar">Login</button>
-                </form>
-                
+    
+    <form class="formulario">
+    
+        <h1>Log In</h1>
+
+        <div class="contenedor">     
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" placeholder="Correo Electronico">
             </div>
-            <div id="derecho">
-                <div class="titulo">
-                    Bienvenido
-                </div>
-                <hr>
-                <div class="pie-form">
-                    <a href="#">¿Perdiste tu contraseña?</a>
-                    <a href="#">¿No tienes Cuenta? Registrate</a>
-                    <hr>
-                    <a href="#">« Volver</a>
-                </div>
+             
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" placeholder="Contraseña">
             </div>
-        </div>
-    </div>
+
+            <input type="submit" value="Login" class="button">
+
+            <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+            <p>¿No tienes una cuenta? <a class="link" href="signup.html">Registrate </a></p>
+
+         </div>
+        </form>
 </body>
 </html>

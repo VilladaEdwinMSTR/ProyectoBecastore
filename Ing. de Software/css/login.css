@@ -9,7 +9,6 @@ body{
 button{
     cursor: pointer;
     pointer-events: auto;
-
 }
 #Marquesina{
     z-index: 1;
@@ -98,7 +97,7 @@ body {
     width: 100%;
     height: 100%;
     
-    background-image: url(img/castor.jpg);
+    background-image: url(css\img\castor.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -131,86 +130,6 @@ body {
     box-sizing: border-box;
 }
 
-/* formulario de login */
-/* formulario de login */
-#login {
-    width: 100%;
-    max-width: 320px;
-    min-width: 320px;
-    padding: 30px 30px 50px 30px;
-    background-color: #719192;
-    
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-    
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    
-    box-sizing: border-box;
-    
-    opacity: 1;
-    filter: alpha(opacity=1);
-}
-
-#login label {
-    display: block;
-    font-family: 'Overpass', sans-serif;
-    font-size: 120%;
-    color:#3c4245;
-    
-    margin-top: 15px;
-}
-
-#login input {
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color: #1b262c;
-    
-    display: block;
-    width: 100%;
-    height: 40px;
-    
-    margin-bottom: 10px;
-    padding: 5px 5px 5px 10px;
-    
-    box-sizing: border-box;
-    
-    border: none;
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-}
-
-#login input::placeholder {
-    font-family: 'Overpass', sans-serif;
-    color: #E4E4E4;
-}
-
-#login button {
-    font-family: 'Overpass', sans-serif;
-    font-size: 110%;
-    color:#1b262c;
-    width: 100%;
-    height: 40px;
-    border: none;
-    
-    border-radius: 3px 3px 3px 3px;
-    -moz-border-radius: 3px 3px 3px 3px;
-    -webkit-border-radius: 3px 3px 3px 3px;
-    
-    background-color: #dfcdc3;
-    
-    margin-top: 10px;
-}
-
-#login button:hover {
-    background-color: #3c4245;
-    color:#dfcdc3;
-}
-/* formulario de login */
-/* formulario de login */
 
 /* seccion de la derecha */
 /* seccion de la derecha */
@@ -256,46 +175,78 @@ hr {
     color: #000000;
     margin-bottom: 3px;
 }
-/* seccion de la derecha */
-/* seccion de la derecha */
+/*Login css*/
 
-/* ajustar a pantallas con ancho menor o igual a 775px; */
-/* ajustar a pantallas con ancho menor o igual a 775px; */
-@media all and (max-width: 775px)
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url('img/castor.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background-color: rgba(112, 160, 112, 0.5); /* Verde con 50% de opacidad */
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
 {
-    #contenedorcentrado {
-        flex-direction:column-reverse;
-
-        min-width: 380px;
-        max-width: 900px;
-        width: 90%;
-
-        background-color: #5f6769;
-
-        /*opacity: 0.50;
-        filter: alpha(opacity=50);*/
-
-        border-radius: 10px 10px 10px 10px;
-        -moz-border-radius: 10px 10px 10px 10px;
-        -webkit-border-radius: 10px 10px 10px 10px;
-
-        -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-        -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-        box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
-
-        padding: 30px;
-        box-sizing: border-box;
-    }
-    
-    #login {
-        margin: 0 auto;
-    }
-    
-    #derecho {
-        padding:20px 20px 20px 20px;
-    }
-    
-    #login label {
-        text-align: left;
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
     }
 }
