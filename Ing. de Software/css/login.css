@@ -38,12 +38,13 @@ button{
     margin-right: 1%;
 }
 
-#logo{
+#logoHorizontal{
     margin-left: 1%;
     font-family: "ArialS", sans-serif;
     font-style: normal;
     font-size: 1.5rem;
     color: rgb(232, 232, 232);
+    margin-left:1%;
 }
 
 .btnMarq{
@@ -58,7 +59,7 @@ button{
 }
 
 .btnMarq:hover{
-    background-color: rgb(5, 121, 147);
+    background-color: rgba(22, 111, 65, 0.591)
 }
 
 #btnLogin, #btnSignUp{
@@ -69,6 +70,16 @@ button{
     min-height: 50px;
     min-width: 80px;
     cursor: pointer;
+}
+
+:is(#btnLogin,#btnSignUp):hover{
+    color: white;
+    font-size: 17px;
+    font-weight:100;
+    text-shadow:
+    1px 1px 1px rgb(223, 255, 171),
+    0 0 1em rgba(255, 255, 255, 0.18),
+    0 0 0.2em rgba(255, 255, 255, 0.217);
 }
 
 /*Marquesina del login.html termina aqui*/
@@ -232,6 +243,7 @@ input[type="password"]{
 }
 p{
     text-align: center;
+    color: rgb(196, 196, 196);
 }
 .link{
     text-decoration: none;

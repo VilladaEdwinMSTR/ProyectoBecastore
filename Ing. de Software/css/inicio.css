@@ -3,6 +3,11 @@ body{
     overflow-x: hidden;
     min-height: 100%;
     display: block;
+    background-image: URL("img/castor 1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 button{
@@ -11,12 +16,9 @@ button{
 
 }
 
-main{
-    margin-top: -12%;
-    margin-left: -9px;
-    z-index: -5;
-    position: relative;
-}
+/* main{
+    
+} */
 
 /*BARRA DE NAVEGACION*/
 #Marquesina{
@@ -91,23 +93,21 @@ main{
     0 0 1em rgba(255, 255, 255, 0.18),
     0 0 0.2em rgba(255, 255, 255, 0.217);
 }
+main{
+    margin-top: 12%;
+    margin-left: -9px;
+    z-index: -5;
+    position: relative;
+    width: 100%;
+}
 
 #Bienvenida{
     display: -1px;
     
 }
 
-#Bienvenida img{
-    width: 120%;
-    backdrop-filter: blur(10px);
-    position: relative;
-    z-index: -4;
-    margin-top: -5%;
-}
-
 #Slogan{
     position: relative;
-    margin-top: -50%;
     left: 50%;
     z-index: 1px;
     font-family: "Bebas Neue", sans-serif;

@@ -54,9 +54,18 @@ body{
 }
 
 .btnMarq:hover{
-    background-color: rgb(5, 121, 147);
+    background-color: rgb(109, 147, 5)
 }
 
+:is(#btnLogin,#btnSignUp):hover{
+    color: white;
+    font-size: 17px;
+    font-weight:100;
+    text-shadow:
+    1px 1px 1px rgb(223, 255, 171),
+    0 0 1em rgba(255, 255, 255, 0.18),
+    0 0 0.2em rgba(255, 255, 255, 0.217);
+}
 #btnLogin, #btnSignUp{
     background-color: transparent;
     font-size: 15px;
@@ -68,147 +77,80 @@ body{
 }
 
 #Conocenos{
-    display: -1px;
-    
+    display: -1px;   
 }
 
-#Conocenos img{
-    width: 120%;
-    backdrop-filter: blur(10px);
-    margin-top: -24%;
-    position: relative;
-    z-index: -4;
-}
-
-/*Texto encima de imagen*/
-
-/* #tituloMision{
-    position: relative;
-    margin-top: -65%;
-    left: 50%;
-    z-index: 1px;
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    color: white;
-    max-width: 50%;
-    text-shadow:
-    1px 1px 2px black,
-    0 0 1em rgba(0,0,0,0.18),
-    0 0 0.2em rgba(0,0,0,0.18);
-
-    text-align: center;
-}
-
-#textoMision{
-    position: relative;
-    margin-top: 10px;
-    left: 50%;
-    z-index: 1px;
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    color: white;
-    max-width: 50%;
-    text-shadow:
-    1px 1px 2px black,
-    0 0 1em rgba(0,0,0,0.18),
-    0 0 0.2em rgba(0,0,0,0.18);
-
-    text-align: justify;
-}
-
-#tituloVision{
-    position: relative;
-    margin-top: -65%;
-    left: 30%;
-    z-index: 1px;
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    color: white;
-    max-width: 50%;
-    text-shadow:
-    1px 1px 2px black,
-    0 0 1em rgba(0,0,0,0.18),
-    0 0 0.2em rgba(0,0,0,0.18);
-
-    text-align: center;
-} */
 
 /*Marquesina del conocenos.html termina aqui*/
+main{
+    position: relative;
+    z-index: -10;
 
-#contenedorFlex{
+    /*IMAGEN RESPONSIVA*/
+    background-image: url("img/Castor_Inincio_Comiendo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 105%;
+    margin-left: -8px;
+}
+
+.contenedorFlex{
+    width: 100%;
+    margin-left: -2%;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-    width: 0%;
+    flex-direction: column;
+    align-items: center;
 }
 
-#tituloConocenos{
-    /* position: relative;
-    margin-top: -65%;
-    left: 30%;
-    z-index: 1px; */
+
+.informacion{
+    margin-top: 2%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: -65%; */
+    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
+    margin-bottom: 1%;
+}
+
+#Mision{
+    background-color: rgba(0, 255, 64, 0.228);
+}
+
+#Vision{
+    background-color: rgba(0, 255, 242, 0.228);
+}
+
+#Valores{
+    background-color: rgba(8, 206, 67, 0.228);
+
+}
+
+
+.titulosConocenos{
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
-    /* font-size: 2rem; */
     color: white;
-    max-width: 50%;
-    text-shadow:
-    1px 1px 2px rgba(0, 0, 0, 0.918),
-    0 0 1em rgba(0,0,0,0.18),
-    0 0 0.2em rgba(0,0,0,0.18);
-
     text-align: center;
+    letter-spacing: 3px;
 }
 
-#textoConocenos{
-    /* position: relative;
-    margin-top: -65%;
-    left: 30%;
-    z-index: 1px; */
-    font-family: "Bebas Neue", sans-serif;
+.textoConocenos{
+    width: 95%;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 18px;
     color: white;
-    max-width: 50%;
     text-shadow:
     1px 1px 2px black,
     0 0 1em rgba(0,0,0,0.18),
     0 0 0.2em rgba(0,0,0,0.18);
-
     text-align: justify;
-}
-
-.contMision{
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    flex-shrink: 1;
-    flex-wrap: column wrap;
-    margin-top: -65%;
-    right: auto;
-    background-color: rgba(0, 255, 255, 0.233);
-    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
-}
-
-.contVision{
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    flex-shrink: 1;
-    flex-wrap: column wrap;
-    background-color: rgba(255, 251, 0, 0.233);
-    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
-}
-
-.contValores{
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    flex-shrink: 1;
-    flex-wrap: column wrap;
-    background-color: rgba(0, 255, 64, 0.233);
-    border-radius: 10px; /* Redondear los bordes con un radio de 10px */
+    margin-top: -1%;
+    line-height: 1.7rem;
+    
 }
