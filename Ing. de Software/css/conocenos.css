@@ -115,9 +115,10 @@ main{
     /* margin-top: -65%; */
     border-radius: 10px; /* Redondear los bordes con un radio de 10px */
     margin-bottom: 1%;
+    background-color: rgba(83, 83, 83, 0.228);
 }
 
-#Mision{
+/* #Mision{
     background-color: rgba(0, 255, 64, 0.228);
 }
 
@@ -128,7 +129,7 @@ main{
 #Valores{
     background-color: rgba(8, 206, 67, 0.228);
 
-}
+} */
 
 
 .titulosConocenos{
