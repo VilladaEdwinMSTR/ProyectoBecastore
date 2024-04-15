@@ -104,3 +104,22 @@ main{
     z-index: -4;
     margin-top: -5%;
 }
+
+.panel {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    margin: 0 auto; /* Centra el panel horizontalmente */
+  }
+  
+  /* Estilos para el título del panel */
+  .panel h2 {
+    color: #333;
+  }
+  
+  /* Estilos para el contenido del panel */
+  .panel p {
+    color: #666;
+  }
