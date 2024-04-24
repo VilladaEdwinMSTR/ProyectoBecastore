@@ -25,7 +25,7 @@
         <div class="contenedor">
             <div class="input-contenedor">
                 <i class="fas fa-user icon"></i>
-                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Nombre Completo" name="user">
             </div>
 
             <div class="input-contenedor">
@@ -42,6 +42,10 @@
 
             <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
         </div>
+
+        >?
+            import("conexion.php");
+        ?>
     </form>
 </body>
 </html>
